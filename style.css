@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' sans-serif;
+
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    padding: 16px;
+    border-bottom: 1px solid red;
+    margin-bottom: 56px;
+    display: flex;
+    background-color: rgb(145, 164, 199);
+
+}
+
+.submenu {
+    left: 0;
+    font-size: 20px;
+    top: 100%;
+    width: 300px;
+    position: absolute;
+    display: none;
+    background-color: rgb(136, 25, 25);
+}
+
+header h1 {
+    font-size: 40px;
+    margin-left: 55%;
+    color: rgb(136, 25, 25);
+    text-decoration: underline #fff;
+}
+
+.menu>li {
+    left: 70px;
+    font-size: 30px;
+    padding: 15px;
+    float: left;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    color: rgb(136, 25, 25);
+    text-decoration: underline #fff;
+    font-weight: bold;
+
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li,
+a {
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    color: #fff;
+}
+
+
+.apresentacao img:hover {
+    transform: scaleX(-1);
+}
+
+
+.apresentacao img {
+    margin-bottom: 200px;
+    max-width: 100%;
+    height: 900px;
+    width: 700px;
+    object-fit: cover;
+    margin-top: 25px;
+}
+
+.conteudo {
+    grid-template-columns: 50% 50%;
+    display: grid;
+    
+}
+
+section h2 {
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.p_alinhamento {
+    line-height: 1.6;
+    font-size: 27px;
+    padding: 10px 10px;
+    border: 3px solid red;
+    text-indent: 30px;
+    margin-block: 10px;
+    text-align: justify;
+    margin-left: 30px;
+
+}
+
+
+.equipamento img {
+    max-width: 100%;
+    
+    
+    
+}
+
+.equipamentos {
+    display: grid;
+    grid-template-columns: repeat(4, 50.00%)
+        /* opção anterior simplificada 32.6% 32.6% 32.6% */ ;
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+.h2_equipamento h2 {
+    margin-left: 50%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #e4e5e7, #cccfd4, #a3a7af);
+}
+
+.equipamento h3 {
+    color: black;
+    font-size: 35px;
+    margin:  0;
+}
+
+.equipamento p {
+    color: black;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.equipamento del {
+    color: red;
+    font-size: 20px;
+}
+
+.equipamento strong {
+    margin: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.equipamento button {
+
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 25px;
+    margin-bottom: 50%;
+    border: 3px solid #f44336;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: red;
+}
+
+@media screen and (max-width: 767px) {
+
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        margin-left: 25%;
+    }
+
+    .menu>li {
+        clear: both;
+        left: 5px;
+        margin-top: 10%;
+    }
+
+    .submenu {
+        width: 100%;
+        display: block;
+        position: relative;
+        margin-top: 10px;
+    
+    }
+
+    .menu,
+    .menu>li {
+        width: 100%;
+        display: block;
+    }
+
+    .submenu li {
+        padding: 8px;
+        display: block;
+        margin-left: 30px;
+    }
+
+    .apresentacao img {
+        margin-bottom: 150px;
+        left: 1%;    
+    }
+
+
+    .p_alinhamento {
+        line-height: 1.6;
+        font-size: 27px;
+        padding: 10px;
+        border: 3px solid red;
+        text-indent: 30px;
+        margin-block: 10px;
+        text-align: justify;
+    }
+
+    .h2_equipamento h2 {
+        margin-left: 0;
+        margin-top: 150px;
+
+    }
+
+    .equipamentos {
+        display: block;
+        grid-template-columns: repeat(4, 35.6%)
+            /* opção anterior simplificada 32.6% 32.6% 32.6% */
+        ;
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+
+    .equipamento img {
+        max-width: 100%;
+        margin-left: 20%;
+    }
+
+
+    .equipamento h3 {
+        color: black;
+        font-size: 35px;
+        margin-left: 20%;
+        margin-top: 15px;
+    }
+
+    .equipamento p {
+        color: black;
+        letter-spacing: 2px;
+        font-size: 15px;
+        margin-left: 20%;
+    }
+
+    .equipamento del {
+        color: red;
+        font-size: 20px;
+        margin-left: 20%;
+    }
+
+
+
+    .equipamento button {
+        display: block;
+        width: 30%;
+        padding: 10px 0;
+        border: none;
+        background-color: black;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 6px;
+        margin-top: 0px;
+        margin-bottom: 20%;
+        margin-left: 28%;
+        border: 3px solid #f44336;
+        transition-duration: 0.4s;
+    }
+
+    button:hover {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        margin-left: 25%;
+    }
+
+    .menu>li {
+        clear: both;
+        left: 5px;
+        margin-top: 10%;
+    }
+
+    .submenu {
+        width: 100%;
+        display: block;
+        position: relative;
+        margin-top: 10px;
+        
+    }
+
+    .menu,
+    .menu>li {
+        width: 100%;
+        display: block;
+    }
+
+    .submenu li {
+        padding: 8px;
+        display: block;
+        margin-left: 30px;
+    }
+
+    .apresentacao img {
+        margin-bottom: 150px;
+    }
+
+    .p_alinhamento {
+        line-height: 1.6;
+        font-size: 27px;
+        padding: 10px;
+        border: 3px solid red;
+        text-indent: 30px;
+        margin-block: 10px;
+        text-align: justify;
+    }
+
+    .h2_equipamento h2 {
+        margin-left: 0;
+        margin-top: 150px;
+
+    }
+
+
+    .equipamentos {
+        display: block;
+        grid-template-columns: repeat(4, 35.6%)
+            /* opção anterior simplificada 32.6% 32.6% 32.6% */
+        ;
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+
+    .equipamento img {
+        max-width: 100%;
+        margin-left: 20%;
+    }
+
+
+    .equipamento h3 {
+        color: black;
+        font-size: 35px;
+        margin-left: 20%;
+        margin-top: 15px;
+    }
+
+    .equipamento p {
+        color: black;
+        letter-spacing: 2px;
+        font-size: 15px;
+        margin-left: 20%;
+    }
+
+    .equipamento del {
+        color: red;
+        font-size: 20px;
+        margin-left: 20%;
+    }
+
+
+
+    .equipamento button {
+        display: block;
+        width: 30%;
+        padding: 10px 0;
+        border: none;
+        background-color: black;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 6px;
+        margin-top: 0px;
+        margin-bottom: 20%;
+        margin-left: 28%;
+        border: 3px solid #f44336;
+        transition-duration: 0.4s;
+    }
+
+    button:hover {
+        background-color: red;
+    }
+}
+    
